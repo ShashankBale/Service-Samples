@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ndroid.myservices">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".Example1Activity" />
+        <service android:name=".Example1Service" />
+
+        <activity android:name=".Example2Activity" />
+        <service android:name=".Example2Service" />
+
+        <activity android:name=".Example3Activity" />
+        <service android:name=".Example3RandomNoGeneratorService" />
+
+        <activity android:name=".Example4Activity" />
+        <service android:name=".Example4RandomWordService" />
+
+        <activity android:name=".Example5Activity" />
+        <service android:name=".Example5DownloadService" />
+
+    </application>
+
+</manifest>
